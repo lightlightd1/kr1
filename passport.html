@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Паспорт</title>
+    <style>
+        .menu a.active {
+    background-color: lightgreen;
+}
+
+.menu a:hover {
+    background-color: yellow;
+}
+    .passport {
+        background-image: url("image/pass.png");
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: 450px auto;
+        width: 450px;
+        min-height: 650px;
+        display: flow-root;
+    }
+
+    .passgiven {
+        margin-left: 90px;
+        margin-top: 70px;
+    }
+
+    .passgiventime {
+        margin-left: 90px;
+        margin-top: 50px;
+    }
+
+    .fio {
+        margin-left: 190px;
+        margin-top: 190px;
+    }
+
+    .name {
+        margin-left: 190px;
+        margin-top: 27px;
+    }
+
+    .s_name {
+        margin-left: 190px;
+        margin-top: 5px;
+    }
+
+    .data_b {
+        margin-left: 180px;
+        margin-top: 4px;
+    }
+
+    .img {
+        margin-left: 20px;
+        margin-top: -72px;
+    }
+
+    .btn {
+        margin-left: 20px;
+        margin-top: 5px;
+    }
+</style>
+</head>
+
+<body>
+    <h1>Паспорт</h1>
+    <h2>Меню</h2>
+
+<ul class="menu">
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="cities.html">Города Италии</a></li>
+    <li><a href="route.html">Маршрут</a></li>
+    <li><a href="gallery.html">Фото</a></li>
+    <li><a href="forms.html">Формы</a></li>
+    <li><a href="dom.html">Считываем информацию из DOM</a></li>
+    <li><a href="passport.html" class="active">Паспорт</a></li>
+    <li><a href="task.html">Решение алгоритмической задачи</a></li>
+    <li><a href="index.html#about">Об Италии</a></li>
+    <li><a href="https://www.italia.it/" target="_blank">
+            <img src="image/Flag_of_Italy.svg"
+                 width="20"
+                 alt="Туристический портал Италии">
+        </a>
+    </li>
+</ul>
+
+<div class="passport">
+
+    <div class="passgiven" id="passgiven">
+        ГУ МВД РОССИИ ПО МО
+    </div>
+
+    <div class="passgiventime">
+        25.09.2026
+    </div>
+
+    <div class="fio" id="surname">
+        Марченко
+    </div>
+
+    <div class="name" id="first-name">
+        Анна
+    </div>
+
+    <div class="s_name" id="patronymic">
+        Александровна
+    </div>
+
+    <div class="data_b">
+        <span id="gender">Жен</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        30/06/<span id="birth-year">2006</span>
+    </div>
+
+    <div class="img">
+        <img src="image/man.png"
+             height="140"
+             width="110"
+             alt="Фотография владельца паспорта">
+    </div>
+
+</div>
+
+<button type ="button" class="btn" id="change"> Заменить </button>
+
+<script src="change.js"></script>
+
+
+
+
+</body>
+
+</html>
